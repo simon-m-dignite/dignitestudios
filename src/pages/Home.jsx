@@ -5,6 +5,8 @@ import FixedSocials from "../components/global/FixedSocials";
 import Hero from "../components/Home/Hero";
 import Technologies from "../components/Home/Technologies";
 import Slider from "../components/Home/Slider";
+import ServicesSection from "../components/Home/ServicesSection";
+import WhyChooseUsSection from "../components/Home/WhyChooseUsSection";
 
 const Home = () => {
   const { isOpen } = useContext(GlobalContext);
@@ -14,6 +16,8 @@ const Home = () => {
       <Hero />
       <Slider />
       <Technologies />
+      <ServicesSection />
+      <WhyChooseUsSection />
       <FixedSocials />
     </div>
   );
