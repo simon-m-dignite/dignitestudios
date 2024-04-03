@@ -1,9 +1,22 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
+import Navbar from "../components/global/Navbar";
+import FixedSocials from "../components/global/FixedSocials";
+import Hero from "../components/Home/Hero";
+import Technologies from "../components/Home/Technologies";
+import Slider from "../components/Home/Slider";
 
 const Home = () => {
   const { isOpen } = useContext(GlobalContext);
-  return <div>Home</div>;
+  return (
+    <div className="w-full h-auto flex flex-col justify-start items-start gap-4">
+      <Navbar />
+      <Hero />
+      <Slider />
+      <Technologies />
+      <FixedSocials />
+    </div>
+  );
 };
 
 export default Home;
