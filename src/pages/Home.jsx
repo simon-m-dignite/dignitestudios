@@ -7,11 +7,8 @@ import Technologies from "../components/Home/Technologies";
 import Slider from "../components/Home/Slider";
 import ServicesSection from "../components/Home/ServicesSection";
 import WhyChooseUsSection from "../components/Home/WhyChooseUsSection";
-<<<<<<< HEAD
 import Faq from "../components/Home/Faq";
-=======
 import CaseStudiesSection from "../components/Home/CaseStudiesSection";
->>>>>>> shoaib
 
 const Home = () => {
   const { isOpen } = useContext(GlobalContext);
