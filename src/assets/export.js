@@ -33,11 +33,15 @@ import SatisfactionGuarantee from "./satisfaction.png";
 import QualityWork from "./quality-work.png";
 import UnlimitedRevision from "./unlimited-revisions.png";
 import CostEffective from "./cost-effective.png";
+import HamburgerDark from "./menu-dark.png";
+import LogoDark from "./logo-dark.png"
 
 export {
     React,
     Logo,
     Hamburger,
+    LogoDark,
+    HamburgerDark,
     BrandUnderline,
     AiColor,
     AiGray,

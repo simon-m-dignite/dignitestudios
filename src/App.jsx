@@ -3,10 +3,18 @@ import "./App.css";
 import { routes } from "./constants/routes";
 import { useContext, Suspense } from "react";
 import GlobalLoader from "./components/global/GlobalLoader";
+import { GlobalContext } from "./context/GlobalContext";
 
 function App() {
+  const { palette } = useContext(GlobalContext);
   return (
-    <>
+    <div
+      className="transition-all duration-700"
+      style={{
+        background: palette?.background,
+        color: palette?.color,
+      }}
+    >
       <Suspense fallback={<GlobalLoader />}>
         <Routes>
           {routes.map((route) => {
@@ -16,7 +24,7 @@ function App() {
           })}
         </Routes>
       </Suspense>
-    </>
+    </div>
   );
 }
 
