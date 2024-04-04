@@ -36,6 +36,13 @@ import CostEffective from "./cost-effective.png";
 import HamburgerDark from "./menu-dark.png";
 import LogoDark from "./logo-dark.png"
 
+import CaseStudy1 from "./case-study1.png";
+import CaseStudy2 from "./case-study2.png";
+import CaseStudy3 from "./case-study3.png";
+import CaseStudy4 from "./case-study4.png";
+import CaseStudyArrow from "./case-study-arrow.png";
+import ArrowUp from "./arrow-up.png";
+
 export {
     React,
     Logo,
@@ -74,56 +81,12 @@ export {
     QualityWork,
     UnlimitedRevision,
     CostEffective,
-}
-
-
-import CaseStudy1 from "./case-study1.png";
-import CaseStudy2 from "./case-study2.png";
-import CaseStudy3 from "./case-study3.png";
-import CaseStudy4 from "./case-study4.png";
-import CaseStudyArrow from "./case-study-arrow.png";
-import ArrowUp from "./arrow-up.png";
-
-export {
-    React,
-    Logo,
-    Hamburger,
-    BrandUnderline,
-    AiColor,
-    AiGray,
-    FigmaColor,
-    FigmaGray,
-    FlutterColor,
-    FlutterGray,
-    PsColor,
-    PsGray,
-    ReactColor,
-    ReactGray,
-    SwiftColor,
-    SwiftGray,
-    TailwindColor,
-    TailwindGray,
-    VueColor,
-    VueGray,
-    Design1,
-    Design2,
-    Design3,
-    UIUX,
-    AppDevelopment,
-    Branding,
-    DigitalMarketing,
-    SEO,
-    WebDevelopment,
-    QuickResponse,
-    FastDelivery,
-    SatisfactionGuarantee,
-    QualityWork,
-    UnlimitedRevision,
-    CostEffective,
     CaseStudy1,
     CaseStudy2,
     CaseStudy3,
     CaseStudy4,
     CaseStudyArrow,
     ArrowUp,
-};
+}
+
+

@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { IoIosCheckmark } from "react-icons/io";
 import { IoCaretDownCircleOutline } from "react-icons/io5";
 import { styles } from "../../styles/styles";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { GlobalContext } from "../../context/GlobalContext";
 
 const Faq = () => {
+  const { palette } = useContext(GlobalContext);
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const handleAccordionClick = (accordionId) => {
@@ -15,7 +17,9 @@ const Faq = () => {
       className={`w-full lg:w-[63%] my-5  ${styles.paddingHorizontal} flex justify-center items-start  h-auto`}
     >
       <div className="w-full h-auto  flex flex-col gap-3 justify-start items-center">
-        <h1 className={`uppercase text-5xl font-bold mb-8`}>
+        <h1
+          className={`uppercase font-extrabold text-center lg:text-start  text-4xl lg:text-5xl lg:font-bold lg:mb-8`}
+        >
           Frequently asked questions
         </h1>
         <div
@@ -26,7 +30,10 @@ const Faq = () => {
           <div
             type="button"
             onClick={() => handleAccordionClick(1)}
-            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 border-b border-gray-200"
+            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 "
+            style={{
+              borderBottom: `2px solid ${palette?.light_contrast_background}`,
+            }}
             data-accordion-target="#accordion-collapse-body-1"
             aria-expanded={openAccordion === 1 ? "true" : "false"}
             aria-controls="accordion-collapse-body-1"
@@ -37,7 +44,7 @@ const Faq = () => {
               } gap-3`}
             >
               <div
-                className={`w-auto flex justify-start items-center text-xl text-left gap-2 `}
+                className={`w-auto flex justify-start items-center text-lg lg:text-xl text-left gap-2 `}
               >
                 <span className="font-medium">
                   What services does your agency offers?
@@ -58,7 +65,12 @@ const Faq = () => {
               aria-labelledby="accordion-collapse-heading-1"
             >
               <div className="py-1 rounded-md mt-1 ">
-                <p className="mb-2 text-gray-700 text-sm ">
+                <p
+                  className="mb-2  text-xs lg:text-sm "
+                  style={{
+                    color: palette?.dark_contrast_color,
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum facilisis erat ut mauris convallis finibus. Aliquam
                   porta, diam sit amet laoreet ultrices.
@@ -69,7 +81,10 @@ const Faq = () => {
           <div
             type="button"
             onClick={() => handleAccordionClick(2)}
-            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 border-b border-gray-200"
+            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 "
+            style={{
+              borderBottom: `2px solid ${palette?.light_contrast_background}`,
+            }}
             data-accordion-target="#accordion-collapse-body-1"
             aria-expanded={openAccordion === 2 ? "true" : "false"}
             aria-controls="accordion-collapse-body-1"
@@ -80,7 +95,7 @@ const Faq = () => {
               } gap-3`}
             >
               <div
-                className={`w-auto flex justify-start items-center text-xl text-left gap-2 `}
+                className={`w-auto flex justify-start items-center text-lg lg:text-xl text-left gap-2 `}
               >
                 <span className="font-medium">
                   What services does your agency offers?
@@ -101,7 +116,12 @@ const Faq = () => {
               aria-labelledby="accordion-collapse-heading-1"
             >
               <div className="py-1 rounded-md mt-1 ">
-                <p className="mb-2 text-gray-700 text-sm ">
+                <p
+                  className="mb-2  text-xs lg:text-sm "
+                  style={{
+                    color: palette?.dark_contrast_color,
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum facilisis erat ut mauris convallis finibus. Aliquam
                   porta, diam sit amet laoreet ultrices.
@@ -112,7 +132,10 @@ const Faq = () => {
           <div
             type="button"
             onClick={() => handleAccordionClick(3)}
-            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 border-b border-gray-200"
+            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 "
+            style={{
+              borderBottom: `2px solid ${palette?.light_contrast_background}`,
+            }}
             data-accordion-target="#accordion-collapse-body-1"
             aria-expanded={openAccordion === 3 ? "true" : "false"}
             aria-controls="accordion-collapse-body-1"
@@ -123,7 +146,7 @@ const Faq = () => {
               } gap-3`}
             >
               <div
-                className={`w-auto flex justify-start items-center text-xl text-left gap-2 `}
+                className={`w-auto flex justify-start items-center text-lg lg:text-xl text-left gap-2 `}
               >
                 <span className="font-medium">
                   What services does your agency offers?
@@ -144,7 +167,12 @@ const Faq = () => {
               aria-labelledby="accordion-collapse-heading-1"
             >
               <div className="py-1 rounded-md mt-1 ">
-                <p className="mb-2 text-gray-700 text-sm ">
+                <p
+                  className="mb-2  text-xs lg:text-sm "
+                  style={{
+                    color: palette?.dark_contrast_color,
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum facilisis erat ut mauris convallis finibus. Aliquam
                   porta, diam sit amet laoreet ultrices.
@@ -155,7 +183,10 @@ const Faq = () => {
           <div
             type="button"
             onClick={() => handleAccordionClick(4)}
-            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 border-b border-gray-200"
+            className="flex flex-col items-center justify-between w-full py-4 font-medium rtl:text-right text-[#7D7D7D] outline-none hover:opacity-95 "
+            style={{
+              borderBottom: `2px solid ${palette?.light_contrast_background}`,
+            }}
             data-accordion-target="#accordion-collapse-body-1"
             aria-expanded={openAccordion === 4 ? "true" : "false"}
             aria-controls="accordion-collapse-body-1"
@@ -166,7 +197,7 @@ const Faq = () => {
               } gap-3`}
             >
               <div
-                className={`w-auto flex justify-start items-center text-xl text-left gap-2 `}
+                className={`w-auto flex justify-start items-center text-lg lg:text-xl text-left gap-2 `}
               >
                 <span className="font-medium">
                   What services does your agency offers?
@@ -187,7 +218,12 @@ const Faq = () => {
               aria-labelledby="accordion-collapse-heading-1"
             >
               <div className="py-1 rounded-md mt-1 ">
-                <p className="mb-2 text-gray-700 text-sm ">
+                <p
+                  className="mb-2  text-xs lg:text-sm "
+                  style={{
+                    color: palette?.dark_contrast_color,
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum facilisis erat ut mauris convallis finibus. Aliquam
                   porta, diam sit amet laoreet ultrices.

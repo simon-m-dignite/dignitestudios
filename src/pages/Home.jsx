@@ -13,7 +13,7 @@ import CaseStudiesSection from "../components/Home/CaseStudiesSection";
 const Home = () => {
   const { isOpen } = useContext(GlobalContext);
   return (
-    <div className="w-full h-auto flex flex-col justify-start items-center gap-4">
+    <div className="overflow-x-hidden w-full h-auto flex flex-col justify-start items-center gap-4">
       <Navbar />
       <Hero />
       <Slider />

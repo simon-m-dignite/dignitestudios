@@ -19,7 +19,7 @@ const Navbar = () => {
         <button
           onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
           className={`${
-            theme == "light" ? "bg-blue-500/[0.2]" : "bg-[#00ACFF]/[0.18]"
+            theme == "light" ? "bg-blue-500/[0.2]" : "bg-[#A9A1D7]/[0.18]"
           } rounded-full transition-all duration-300 w-[70px] h-[37.5px] p-[4px] flex justify-start items-center`}
         >
           <span

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   AiColor,
   AiGray,
@@ -18,8 +18,10 @@ import {
   VueGray,
 } from "../../assets/export";
 import TechnologyCard from "./TechnologyCard";
+import { GlobalContext } from "../../context/GlobalContext";
 
 const Technologies = () => {
+  const { palette } = useContext(GlobalContext);
   const technologies = [
     {
       color: FlutterColor,
@@ -55,11 +57,14 @@ const Technologies = () => {
     },
   ];
   return (
-    <div className="w-full h-auto my-5 flex flex-col gap-3 justify-start items-center">
-      <h1 className="text-3xl font-bold text-black">
-        Technologies we’re using
-      </h1>
-      <div className="w-full h-auto flex justify-center gap-4 items-center ">
+    <div
+      style={{
+        color: palette.color,
+      }}
+      className="w-full h-auto my-5 flex flex-col gap-3 justify-start items-center"
+    >
+      <h1 className="text-3xl font-bold">Technologies we’re using</h1>
+      <div className="w-full h-auto flex flex-wrap justify-center gap-4 items-center ">
         {technologies?.map((technology, key) => {
           return <TechnologyCard technology={technology} />;
         })}

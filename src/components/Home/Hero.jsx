@@ -19,7 +19,7 @@ const Hero = () => {
         style={{
           color: palette?.color,
         }}
-        className="text-7xl font-bold text-center capitalize"
+        className="text-3xl font-extrabold lg:text-7xl lg:font-bold text-center capitalize"
       >
         Elevate your brand in the <br />
         digital cosmos
@@ -28,7 +28,7 @@ const Hero = () => {
         style={{
           color: palette?.light_contrast_color,
         }}
-        className=" text-center my-6 text-[19px] font-normal"
+        className=" text-center my-2 lg:my-6 text-[16px] lg:text-[19px] font-normal"
       >
         Whether it's crafting a visually stunning brand identity, designing
         immersive <br /> digital experiences, or developing strategic marketing
@@ -39,7 +39,7 @@ const Hero = () => {
             background: palette?.brandOrange,
             color: "white",
           }}
-          className="w-[206px] h-16 rounded-full transition-all duration-150 hover:opacity-90  shadow-xl text-md font-medium shadow-[#F15C20]/[0.3] flex items-center justify-center"
+          className="w-[150px] lg:w-[206px] h-14 lg:h-16 rounded-full transition-all duration-150 hover:opacity-90  shadow-xl text-sm lg:text-md font-medium shadow-[#F15C20]/[0.3] flex items-center justify-center"
         >
           Schedule a meeting
         </button>
@@ -48,7 +48,7 @@ const Hero = () => {
             background: palette?.brandRed,
             color: "white",
           }}
-          className="w-[206px] h-16 rounded-full  transition-all duration-100 hover:scale-105 text-md font-medium  flex items-center justify-center gap-2"
+          className="w-[150px] lg:w-[206px] h-14 lg:h-16 rounded-full  transition-all duration-100 hover:scale-105 text-sm lg:text-md font-medium  flex items-center justify-center gap-2"
         >
           <BsFillTelephoneFill />
           <span>+1 877 714 1770</span>
