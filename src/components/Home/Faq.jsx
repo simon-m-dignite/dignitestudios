@@ -14,7 +14,7 @@ const Faq = () => {
   };
   return (
     <div
-      className={`w-full lg:w-[63%] my-5  ${styles.paddingHorizontal} flex justify-center items-start  h-auto`}
+      className={`w-full lg:w-[70%] my-5  ${styles.paddingHorizontal} flex justify-center items-start  h-auto`}
     >
       <div className="w-full h-auto  flex flex-col gap-3 justify-start items-center">
         <h1
