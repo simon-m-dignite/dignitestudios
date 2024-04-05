@@ -34,7 +34,7 @@ import QualityWork from "./quality-work.png";
 import UnlimitedRevision from "./unlimited-revisions.png";
 import CostEffective from "./cost-effective.png";
 import HamburgerDark from "./menu-dark.png";
-import LogoDark from "./logo-dark.png"
+import LogoDark from "./logo-dark.png";
 
 import CaseStudy1 from "./case-study1.png";
 import CaseStudy2 from "./case-study2.png";
@@ -43,50 +43,68 @@ import CaseStudy4 from "./case-study4.png";
 import CaseStudyArrow from "./case-study-arrow.png";
 import ArrowUp from "./arrow-up.png";
 
+import Telemedicine from "./telemedicine.png";
+import Fintech from "./fintech.png";
+import DatingApps from "./dating-apps.png";
+import Ecommerce from "./ecommerce.png";
+import SocialMedia from "./social-media.png";
+import MarketPlaces from "./market-places.png";
+
+import TestionialImage1 from "./testimonial-1.png";
+import TestionialImage2 from "./testimonial-2.png";
+import TestionialImage3 from "./testimonial-3.png";
+
 export {
-    React,
-    Logo,
-    Hamburger,
-    LogoDark,
-    HamburgerDark,
-    BrandUnderline,
-    AiColor,
-    AiGray,
-    FigmaColor,
-    FigmaGray,
-    FlutterColor,
-    FlutterGray,
-    PsColor,
-    PsGray,
-    ReactColor,
-    ReactGray,
-    SwiftColor,
-    SwiftGray,
-    TailwindColor,
-    TailwindGray,
-    VueColor,
-    VueGray,
-    Design1,
-    Design2,
-    Design3,
-    UIUX,
-    AppDevelopment,
-    Branding,
-    DigitalMarketing,
-    SEO,
-    WebDevelopment,
-    QuickResponse,
-    FastDelivery,
-    SatisfactionGuarantee,
-    QualityWork,
-    UnlimitedRevision,
-    CostEffective,
-    CaseStudy1,
-    CaseStudy2,
-    CaseStudy3,
-    CaseStudy4,
-    CaseStudyArrow,
-    ArrowUp,
-}
-
-
+  React,
+  Logo,
+  Hamburger,
+  LogoDark,
+  HamburgerDark,
+  BrandUnderline,
+  AiColor,
+  AiGray,
+  FigmaColor,
+  FigmaGray,
+  FlutterColor,
+  FlutterGray,
+  PsColor,
+  PsGray,
+  ReactColor,
+  ReactGray,
+  SwiftColor,
+  SwiftGray,
+  TailwindColor,
+  TailwindGray,
+  VueColor,
+  VueGray,
+  Design1,
+  Design2,
+  Design3,
+  UIUX,
+  AppDevelopment,
+  Branding,
+  DigitalMarketing,
+  SEO,
+  WebDevelopment,
+  QuickResponse,
+  FastDelivery,
+  SatisfactionGuarantee,
+  QualityWork,
+  UnlimitedRevision,
+  CostEffective,
+  CaseStudy1,
+  CaseStudy2,
+  CaseStudy3,
+  CaseStudy4,
+  CaseStudyArrow,
+  ArrowUp,
+  Telemedicine,
+  Fintech,
+  DatingApps,
+  Ecommerce,
+  SocialMedia,
+  MarketPlaces,
+  TestionialImage1,
+  TestionialImage2,
+  TestionialImage3,
+};
