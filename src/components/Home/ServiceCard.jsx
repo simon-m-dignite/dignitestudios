@@ -3,7 +3,8 @@ import { GlobalContext } from "../../context/GlobalContext";
 
 const ServiceCard = ({ title, desc, icon, count }) => {
   const [hover, setHover] = useState(false);
-  const { theme } = useContext(GlobalContext);
+  const { theme, mouseCursor, disableMouseCursor } = useContext(GlobalContext);
+
   return (
     <div
       className={`group flex flex-col ${
@@ -17,8 +18,16 @@ const ServiceCard = ({ title, desc, icon, count }) => {
           ? "lg:border-b"
           : count == 4 && "lg:border-r lg:border-l"
       }`}
-      onMouseOver={() => setHover(true)}
-      onMouseOut={() => setHover(false)}
+      onMouseMove={(e) => {
+        mouseCursor("Checking", e);
+      }}
+      onMouseOver={(e) => {
+        setHover(true);
+      }}
+      onMouseOut={() => {
+        setHover(false);
+        disableMouseCursor();
+      }}
     >
       <img src={icon} alt="UIUX" className="text-white" />
       {/* {hover && <span>fjef</span>} */}

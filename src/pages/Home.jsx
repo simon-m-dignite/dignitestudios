@@ -9,6 +9,8 @@ import ServicesSection from "../components/Home/ServicesSection";
 import WhyChooseUsSection from "../components/Home/WhyChooseUsSection";
 import Faq from "../components/Home/Faq";
 import CaseStudiesSection from "../components/Home/CaseStudiesSection";
+import Footer from "../components/Home/Footer";
+import LandingContactUs from "../components/Home/LandingContactUs";
 
 const Home = () => {
   const { isOpen } = useContext(GlobalContext);
@@ -20,8 +22,10 @@ const Home = () => {
       <Technologies />
       <CaseStudiesSection />
       <ServicesSection />
-      <Faq />
       <WhyChooseUsSection />
+      <Faq />
+      <LandingContactUs />
+      <Footer />
       <FixedSocials />
     </div>
   );

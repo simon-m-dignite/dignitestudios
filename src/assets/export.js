@@ -42,6 +42,7 @@ import CaseStudy3 from "./case-study3.png";
 import CaseStudy4 from "./case-study4.png";
 import CaseStudyArrow from "./case-study-arrow.png";
 import ArrowUp from "./arrow-up.png";
+import CTO from "./cto.png"
 
 export {
     React,
@@ -87,6 +88,7 @@ export {
     CaseStudy4,
     CaseStudyArrow,
     ArrowUp,
+    CTO
 }
 
 

@@ -45,8 +45,8 @@ const Hero = () => {
         </button>
         <button
           style={{
-            background: palette?.brandRed,
-            color: "white",
+            border: `2px solid ${palette?.brandOrange}`,
+            color: palette?.brandOrange,
           }}
           className="w-[150px] lg:w-[206px] h-14 lg:h-16 rounded-full  transition-all duration-100 hover:scale-105 text-sm lg:text-md font-medium  flex items-center justify-center gap-2"
         >
